@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <h1 id="title">Weather App Dashboard</h1>
+    <div class="weather-container">
+        <div class="weather-input">
+            <h3 id="header">Enter the name of the city:</h3>
+            <input class="city-name" type="text" placeholder="E.g., New York, Pittsburgh, London" />
+            <button type="button" class="search-button">Search</button>
+            <div class="draw-line"></div>
+            <button type="button" class="location-button">Use Current Location</button>
+        </div>
+        <div class="weather-information">
+            <div class="current-weather-display">
+                <div class="current-weather-details">
+                    <h3 id="current-title"></h3>
+                    <div class="detail-1">
+                        <p id="current-temp">Temperature: </p>
+                        <p id="current-wind">Wind: </p>
+                        <p id="current-humidity">Humidity: </p>
+                        <p id="current-uv">UV Index:</p>
+                    </div>
+                    <div class="detail-2">
+                        <p id="current-realfeel">Feels Like: </p>
+                        <p id="current-visibility">Visibility:</p>
+                        <p id="current-pressure">Pressure:</p>
+                        <p id="current-precipitation">Precipitation:</p>
+                    </div>
+                    <div class="weather-image">
+                        <img src="" id="icon" />
+                    </div>
+                </div>
+            </div>
+            <div class="forecast-weather-display">
+                <h2 id="header2">Week Forecast:</h2>
+                <div class="day1">
+                    <div class="forecast-weather-details">
+                        
+                    </div>
+                </div>
+                <div class="day2">
+                    <div class="forecast-weather-details">
+                        
+                    </div>
+                </div>
+                <div class="day3">
+                    <div class="forecast-weather-details">
+                        
+                    </div>
+                </div>
+                <div class="day4">
+                    <div class="forecast-weather-details">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
