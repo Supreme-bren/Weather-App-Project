@@ -13,13 +13,16 @@
     .forecast-weather-display, .daycast{
         flex-wrap: wrap;
     }
-    .daycast .day1, .day2, .day3, .day4{
-        width: calc(100% / 4 - 15px);
+    .daycast {
+        width: calc(100% / 3 - 15px);
     }
 }
 @media (max-width: 1200px){
     .daycast{
         width: calc(100% / 3  - 15px);
+    }
+    .weather-container{
+        flex-wrap: wrap;
     }
 }
 @media (max-width: 950px){
@@ -28,6 +31,9 @@
     }
     .daycast .day1, .day2, .day3, .day4{
         width: calc(100% / 2 - 10px);
+    }
+    .weather-container{
+        flex-wrap: wrap;
     }
 }
 @media (max-width: 750px){
@@ -41,19 +47,21 @@
         
     }
     .current-weather-display{
-        overflow: auto;
+        overflow-x: scroll;
         
     }
     .weather-input{
         width: 100%;
     }
     .daycast{
-        overflow: auto;
+        overflow-x: scroll;
         margin-left: 50px;
+        width: 350px;
     }
     .weather-information h2{
         font-size: 1.35rem;
     }
+    
 }
 
 *{
