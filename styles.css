@@ -6,6 +6,56 @@
     --dark-grey: #6C757D;
     --border-rad: 3px;
 }
+@media (max-width: 1400px){
+    .weather-information .current-weather-display{
+        padding: 20px;
+    }
+    .forecast-weather-display, .daycast{
+        flex-wrap: wrap;
+    }
+    .daycast .day1, .day2, .day3, .day4{
+        width: calc(100% / 4 - 15px);
+    }
+}
+@media (max-width: 1200px){
+    .daycast{
+        width: calc(100% / 3  - 15px);
+    }
+}
+@media (max-width: 950px){
+    .weather-input{
+        width: 450px;
+    }
+    .daycast .day1, .day2, .day3, .day4{
+        width: calc(100% / 2 - 10px);
+    }
+}
+@media (max-width: 750px){
+    h1{
+        font-size: 1.45rem;
+        padding: 16px 0;
+    }
+    .weather-container{
+        flex-wrap: wrap;
+        padding: 15px;
+        
+    }
+    .current-weather-display{
+        overflow: auto;
+        
+    }
+    .weather-input{
+        width: 100%;
+    }
+    .daycast{
+        overflow: auto;
+        margin-left: 50px;
+    }
+    .weather-information h2{
+        font-size: 1.35rem;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +66,8 @@
 body{
     background-color: var(--main-color2);
     font-family: 'Lucida Bright', sans-serif;
+    overflow-x: hidden;
+    
 }
 
 #title{
@@ -100,7 +152,10 @@ body{
 .location-button:hover{
     cursor: pointer;
 }
-
+.location-button:active{
+    cursor: pointer;
+    background-color: #595e72;
+}
 .weather-information{
     width: 1000px;
     height: 600px;
@@ -160,6 +215,9 @@ body{
     transform: translateY(15px);
 
 }
+.forecast-weather-display{
+    color: var(--main-color3);
+}
 #current-title{
     margin-bottom: 20px;
 }
@@ -172,4 +230,20 @@ body{
 #current-realfeel, #current-visibility, #current-precipitation, #current-pressure{
     margin: 10px 0 5px 0;
 }
+#icon1{
+width: 120px;
+}
+.weather-image{
+    transform: translate(350px, -150px);
+}
+#icon1-desc{
+    justify-content: left;
+    text-align: left;
+    margin-left: 20px;
+}
+.f1, .f2, .f3, .f4{
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
 
