@@ -9,7 +9,7 @@ const getWeatherByCity = () =>{
     let cityName = document.querySelector('.city-name').value;
 
     //WeatherApi.com current weather and forecasting weather for 3 days(Free PLan), can choose to upgrade and change the days to 4 with commented code
-    let weatherUrl = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${cityName}&days=3&aqi=no`;
+    let weatherUrl = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${cityName}&days=4&aqi=no`;
     
    let req = new XMLHttpRequest();
     req.open('GET', weatherUrl, true)
@@ -105,9 +105,9 @@ const getWeatherByCity = () =>{
         let title3 = document.getElementById('day3-title');
         let info3 = document.getElementById('day3-info');
         let icon3 = document.getElementById('day3-icon')
-       /* let title4 = document.getElementById('day4-title');
+        /*let title4 = document.getElementById('day4-title');
         let info4 = document.getElementById('day4-info');
-        let icon4 = document.getElementById('day4-icon')*/
+        let icon4 = document.getElementById('day4-icon');*/
         //Code for adding 4th forecast day
 
         title1.innerHTML = forecastWeather[0].date;
@@ -119,7 +119,7 @@ const getWeatherByCity = () =>{
         title3.innerHTML = forecastWeather[2].date;
         icon3.src = forecastWeather[2].icon;
         info3.innerHTML = 'min: ' + forecastWeather[2].mintemp + '°F' + "<br />" + 'max: ' +  forecastWeather[2].maxtemp + '°F';
-       /* title4.innerHTML = forecastWeather[3].date;
+        /*title4.innerHTML = forecastWeather[3].date;
         icon4.src = forecastWeather[3].icon;
         info4.innerHTML = 'min: ' + forecastWeather[3].mintemp + '°F' + "<br />" + 'max: ' +  forecastWeather[3].maxtemp + '°F';*/
         //Code for adding 4th forecast day

@@ -15,5 +15,5 @@ npm init -y
 -Where one can register for a free API key
 [https://www.weatherapi.com/](https://www.weatherapi.com/)
 -Select Pricing --> Select Free API plan --> Get Started --> Sign Up
-![Example](weather-shot.png?raw=true)
+![Example](weather-shot2.png?raw=true)
 
