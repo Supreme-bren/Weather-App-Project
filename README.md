@@ -13,5 +13,5 @@ npm init -y
 ## Important Information
 ### Weather API website 
 -Where one can register for a free API key
-
+[https://www.weatherapi.com/](https://www.weatherapi.com/)
 
