@@ -14,4 +14,5 @@ npm init -y
 ### Weather API website 
 -Where one can register for a free API key
 [https://www.weatherapi.com/](https://www.weatherapi.com/)
+-Select Pricing --> Select Free API plan --> Get Started --> Sign Up
 
