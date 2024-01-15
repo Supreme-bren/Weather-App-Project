@@ -9,7 +9,7 @@ const getWeatherByCity = () =>{
     let cityName = document.querySelector('.city-name').value;
 
     //WeatherApi.com current weather and forecasting weather for 3 days(Free PLan), can choose to upgrade and change the days to 4 with commented code
-    let weatherUrl = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${cityName}&days=4&aqi=no`;
+    let weatherUrl = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${cityName}&days=3&aqi=no`;
     
    let req = new XMLHttpRequest();
     req.open('GET', weatherUrl, true)
