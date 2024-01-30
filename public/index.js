@@ -7,7 +7,7 @@ const getWeatherByCity = () =>{
     let forecastWeather = [];
     let cityName = document.querySelector('.city-name').value;
 
-    let weatherUrl = `/api?q=${cityName}&days=3`;
+    let weatherUrl = `/api?q=${cityName}&days=4`;
     
    let req = new XMLHttpRequest();
     req.open('GET', weatherUrl, true)
@@ -138,7 +138,7 @@ const successCallback = (position) =>{
     let currentLocation = {};
     let forecastWeather = [];
     
-    let weatherUrl = `/api/?q=${lattitude},${longitude}&days=3`
+    let weatherUrl = `/api/?q=${lattitude},${longitude}&days=4`
     
     const req = new XMLHttpRequest();
     req.open('GET', weatherUrl, true);
