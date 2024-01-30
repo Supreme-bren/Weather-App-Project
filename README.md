@@ -1,5 +1,5 @@
 # Find My Weather(Weather-App-Project)
--Welcome to my weather app Find My Weather. An App that I created in pure
+-Welcome to my weather app "Find My Weather". An App that I created in pure
 vanilla javascript that can show you the weather anywhere in the world. Give a city
 or enable HTML5 geolocation and you will recieve the current weather and
 forcasting weather for the days ahead so you can prepare for your week. I created a
