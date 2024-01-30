@@ -7,7 +7,6 @@ const getWeatherByCity = () =>{
     let forecastWeather = [];
     let cityName = document.querySelector('.city-name').value;
 
-    //WeatherApi.com current weather and forecasting weather for 3 days(Free PLan), can choose to upgrade and change the days to 4 with commented code
     let weatherUrl = `/api?q=${cityName}&days=3`;
     
    let req = new XMLHttpRequest();
@@ -87,13 +86,12 @@ const getWeatherByCity = () =>{
             mintemp: weatherData.forecast.forecastday['2'].day.mintemp_f,
             maxtemp: weatherData.forecast.forecastday['2'].day.maxtemp_f
         }
-        /*forecastWeather[3] = {
+        forecastWeather[3] = {
             date: weatherData.forecast.forecastday['3'].date,
             icon: weatherData.forecast.forecastday['3'].day.condition.icon,
             mintemp: weatherData.forecast.forecastday['3'].day.mintemp_f,
             maxtemp: weatherData.forecast.forecastday['3'].day.maxtemp_f
-        }*/
-        //Code for adding 4th forecast day
+        }
 
         let title1 = document.getElementById('day1-title');
         let info1 = document.getElementById('day1-info');
@@ -104,10 +102,9 @@ const getWeatherByCity = () =>{
         let title3 = document.getElementById('day3-title');
         let info3 = document.getElementById('day3-info');
         let icon3 = document.getElementById('day3-icon')
-        /*let title4 = document.getElementById('day4-title');
+        let title4 = document.getElementById('day4-title');
         let info4 = document.getElementById('day4-info');
-        let icon4 = document.getElementById('day4-icon');*/
-        //Code for adding 4th forecast day
+        let icon4 = document.getElementById('day4-icon');
 
         title1.innerHTML = forecastWeather[0].date;
         icon1.src = forecastWeather[0].icon;
@@ -118,10 +115,9 @@ const getWeatherByCity = () =>{
         title3.innerHTML = forecastWeather[2].date;
         icon3.src = forecastWeather[2].icon;
         info3.innerHTML = 'min: ' + forecastWeather[2].mintemp + '°F' + "<br />" + 'max: ' +  forecastWeather[2].maxtemp + '°F';
-        /*title4.innerHTML = forecastWeather[3].date;
+        title4.innerHTML = forecastWeather[3].date;
         icon4.src = forecastWeather[3].icon;
-        info4.innerHTML = 'min: ' + forecastWeather[3].mintemp + '°F' + "<br />" + 'max: ' +  forecastWeather[3].maxtemp + '°F';*/
-        //Code for adding 4th forecast day
+        info4.innerHTML = 'min: ' + forecastWeather[3].mintemp + '°F' + "<br />" + 'max: ' +  forecastWeather[3].maxtemp + '°F';
     }
 }
 const getWeatherByLocation = () => {
@@ -217,13 +213,12 @@ const successCallback = (position) =>{
             mintemp: weatherData.forecast.forecastday['2'].day.mintemp_f,
             maxtemp: weatherData.forecast.forecastday['2'].day.maxtemp_f
         }
-        /*forecastWeather[3] = {
+        forecastWeather[3] = {
             date: weatherData.forecast.forecastday['3'].date,
             icon: weatherData.forecast.forecastday['3'].day.condition.icon,
             mintemp: weatherData.forecast.forecastday['3'].day.mintemp_f,
             maxtemp: weatherData.forecast.forecastday['3'].day.maxtemp_f
-        }*/
-        //Code for adding 4th forecast day
+        }
 
         let title1 = document.getElementById('day1-title');
         let info1 = document.getElementById('day1-info');
@@ -234,10 +229,9 @@ const successCallback = (position) =>{
         let title3 = document.getElementById('day3-title');
         let info3 = document.getElementById('day3-info');
         let icon3 = document.getElementById('day3-icon')
-       /* let title4 = document.getElementById('day4-title');
+        let title4 = document.getElementById('day4-title');
         let info4 = document.getElementById('day4-info');
-        let icon4 = document.getElementById('day4-icon')*/
-        //Code for adding 4th forecast day
+        let icon4 = document.getElementById('day4-icon')
 
         title1.innerHTML = forecastWeather[0].date;
         icon1.src = forecastWeather[0].icon;
@@ -248,10 +242,9 @@ const successCallback = (position) =>{
         title3.innerHTML = forecastWeather[2].date;
         icon3.src = forecastWeather[2].icon;
         info3.innerHTML = 'min: ' + forecastWeather[2].mintemp + '°F' + "<br />" + 'max: ' +  forecastWeather[2].maxtemp + '°F';
-        /*title4.innerHTML = forecastWeather[3].date;
+        title4.innerHTML = forecastWeather[3].date;
         icon4.src = forecastWeather[3].icon;
-        info4.innerHTML = 'min: ' + forecastWeather[3].mintemp + '°F' + "<br />" + 'max: ' +  forecastWeather[3].maxtemp + '°F';*/
-        //Code for adding 4th forecast day
+        info4.innerHTML = 'min: ' + forecastWeather[3].mintemp + '°F' + "<br />" + 'max: ' +  forecastWeather[3].maxtemp + '°F';
 
     }
 }
