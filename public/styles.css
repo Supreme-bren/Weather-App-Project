@@ -7,9 +7,6 @@
     --border-rad: 3px;
 }
 @media (max-width: 1400px){
-    body{
-        overflow-x: hidden;
-    }
     .weather-information .current-weather-display{
         padding: 20px;
     }
@@ -21,6 +18,9 @@
     }
 }
 @media (max-width: 1200px){
+    body{
+        overflow-x: hidden;
+    }
     .daycast{
         width: calc(100% / 3  - 15px);
     }
