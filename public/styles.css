@@ -7,6 +7,9 @@
     --border-rad: 3px;
 }
 @media (max-width: 1400px){
+    body{
+        overflow-x: hidden;
+    }
     .weather-information .current-weather-display{
         padding: 20px;
     }
